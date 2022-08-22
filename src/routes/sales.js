@@ -122,7 +122,15 @@ saleRouter.get(`${base}/reports/daily/:time`,checkScope('sale:count',' can not c
         return results;
     }
 
-    sumary(daily).then(val => res.send(val))
+    // sumary(daily).then(val => res.status(201).send(val))
+
+    try {
+        const results = sumary(daily)
+        res.status(201).send(results)
+    } catch (error) {
+
+    }
+    
 })
 
 // MONTHLY SALES
