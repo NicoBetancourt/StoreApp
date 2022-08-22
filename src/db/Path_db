@@ -1,0 +1,1 @@
+ /home/nico/mongodb/bin/mongod --dbpath=/home/nico/mongodb-data
