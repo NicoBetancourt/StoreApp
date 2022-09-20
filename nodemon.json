@@ -1,0 +1,9 @@
+{
+    "exec": "ts-node-dev -r tsconfig-paths/register ./source/index.ts",
+    "watch": [
+      "source/*",
+      "public/*"
+    ],
+    "ext": "js, html, css, json"
+  }
+  

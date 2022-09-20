@@ -1,0 +1,29 @@
+{
+    "compileOnSave": false,
+    "compilerOptions": {
+        "target": "es6",
+        "module": "commonjs",
+        "strict": true,
+        "sourceMap": true,
+        "esModuleInterop": true,
+        "forceConsistentCasingInFileNames": true,
+        "experimentalDecorators": true,
+        "resolveJsonModule": true,
+        "moduleResolution": "Node",
+        "outDir": "./dist",
+        "baseUrl": "./source",
+        "paths": {
+            "@fnd/*": [
+                "frameworks_and_drivers/*"
+            ]
+        }
+    },
+    "include": [
+        "typings.d.ts",
+        "source/**/*.ts",
+    ],
+    "exclude": [
+        "node_modules",
+        "test"
+    ]
+}
